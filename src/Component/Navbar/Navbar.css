@@ -1,0 +1,47 @@
+.nav{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    display: none;
+}
+
+.nav span{
+    font-size: xx-large;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 10vw;
+    text-align: center;
+}
+
+.nav>div{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav .ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5vh;
+}
+
+.nav ul .li{
+    list-style: none;
+    margin: 0 2vw;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nav ul .li:hover{
+    color: rgb(84, 84, 211);
+    transform: scale(1.1);
+
+}

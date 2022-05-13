@@ -1,0 +1,14 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    margin-bottom: 10vh;
+    font-size: 1rem;
+}
+h1{
+    text-align: center;
+    margin-bottom: 0.4vh;
+    font-size: 2.5rem;
+}

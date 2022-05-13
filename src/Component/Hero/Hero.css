@@ -1,0 +1,39 @@
+.Hero{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.Hero .intro{
+    margin-left: 10vw;
+
+}
+
+.nametag{
+    font-size: 3rem;
+}
+
+.hi{
+    display: block;
+    font-size: 1rem;
+}
+
+.title{
+    font-size: 1rem;
+}
+
+.name{
+    color: #00FF00;
+}
+
+.green{
+    height: 30vmax;
+    width: 30vmax;
+    background-color: #00FF00;
+    border-radius: 50vmin;
+    margin-right: 10vw;
+    z-index: -1;
+}
