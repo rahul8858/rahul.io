@@ -6,23 +6,33 @@
     justify-content: space-between;
     box-sizing: border-box;
 }
-
-.Hero .intro{
+.text{
+    font-size: 24px;
+    font-weight: 600;
     margin-left: 10vw;
-
 }
 
-.nametag{
-    font-size: 3rem;
+.text>div{
+    font-size: 64px;
 }
 
-.hi{
+.text>a{
     display: block;
-    font-size: 1rem;
+    margin-top: 1.8vh;
+    text-decoration: none;
+    color: #fff;
+    background-color:  #00FF00;
+    height: 7vh;
+    width: 10vw;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1vh 0;
+    border-radius: 2vw;
 }
 
-.title{
-    font-size: 1rem;
+.text>a:hover{
+    text-transform: capitalize;
+    transform: scale(1.3);
 }
 
 .name{

@@ -3,124 +3,81 @@
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
-    /* background-color: #79DAE8; */
+    font-weight: 600;
 }
 
 @media screen and (max-width: 600px) {
     div.nav{
-        height: 8vh;
+        height: 10vh;
     }
     div.nav > span{
+        font-size: 56px;
         margin-left: 5vw;
-    }
-    div.nav > ul.ul{
-        display: none;
-    }
-    div.Hero{
-        height: 30vh;
-    }
-    div.Hero > div.intro{
-        margin-left: 5vw;
-        justify-content: center;
-    }
-/*
-    div.nametag > span.hi,
-    div.intro > div.title
-    {
-        font-size: 2.5rem;
     }
 
-    div.intro > div.nametag{
-        font-size: 5rem;
+    div.nav >ul{
+        margin-right: 5vw;
     }
-*/
+
+    span.li{
+        margin: 0 5px;
+        font-size: 24px;
+    }
+
+    div.Hero{
+        height: 32vh;
+        justify-content: center;
+    }
+
+    div.Hero>div.text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    
+    div.Hero>div.text>a{
+        height: 5vh;
+        width: 40vw;
+    }
+
     div.Hero > div.green{
         display: none;
     }
-    div.About{
+    div#about{
         display: flex;
         flex-direction: column;
-        height: 50vh;
+        height: 48vh;
         padding: 0;
         margin: 0;
-    }
-    div.About > h1{
-        margin-left: 0;
     }
 
     div.About > div.aboutme{
         flex-direction: column;
         width: 80vw;
     }
-    img{
-        height:20vh;
-        margin: 0;
+    
+    div.para{
+        font-size: 24px;
+        width: 80vw;
     }
+
     div#Skills{
         display: flex;
         flex-direction: column;
-        height: 60vh;
+        height: 75vh;
         margin-top: 8vh;
     }
 
-    div#Skills > h1{
-        margin-top: 5vh;
-    }
-
-    div.flex-container{
-        flex-direction: column;
-        height: 50vh;
+    div.skill-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
         margin-top: 0;
     }
-
-    div.small{
-        height: 10vh;
-        width: 80vw;
-        margin: 1vh 0;
-    }
-
-    #Contact{
-        flex-direction: column;
-        width: 100vw;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-    .site-intro{
-        margin-top: 5vh;
-        height: 12vh;
-        margin: 2vh 0;
-    }
-
-    div.site-intro > h1.site{
-        margin: 0;
-    }
-
-    div.site-intro > div.mytitle{
-        margin-bottom: 2vh;
-    }
-
-    div.links{
-        margin-left: 0;
-    }
-    div.form{
-        margin: 0;
-        width: 100vw;
-    }
-
-
-    div.form > h1{
-        font-size: 2rem;
-    }
-
-    input{
-        width: 100%;
-    }
-
-    .btn{
-        height: 0vh;
-    }
-
-    div.copy{
-        margin-bottom: 5vh;
+    div.skill-container>img{
+        margin: 2vh 4vw ;
     }
 }
