@@ -1,20 +1,70 @@
+.skills{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    color: white;
+}
+
 .skill-container{
+    position: absolute;
+    bottom: 0vh;
+    left: 12vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 30vh;
 }
-h1{
-    text-align: center;
+.paraskill{
+    position: absolute;
+    top: 20vh;
+    left: 15vw;
+    width: 20vw;
+    height: 20vh;
+    font-size: 20px;
+    animation: fade 2s ;
+}
+
+.paraskill>h1{
     margin: 1vh 0;
-    font-size: 64px;
+    font-size: 36px;
 }
 
 img{
-    margin: 0 2vw;
+    margin: 0 3vw;
 }
 
 img:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
+}
+
+.skills>.green{
+    position: absolute;
+    top: 10vh;
+    right: 0vw;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .skill{
+        height: 90vh;
+    }
+    .paraskill{
+        width: 70vw;
+        height: 30vh;
+        font-size: 16px;
+    }
+    .paraskill>h1{
+        font-size: 24px;
+    }
+    .skill-container{
+        display: none;
+    }
 }

@@ -1,21 +1,28 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./Component/Navbar/Navbar.jsx";
-import Hero from "./Component/Hero/Hero.jsx";
-import About from "./Component/About/About.jsx";
-import Skills from "./Component/Skills/Skills.jsx";
-import Projects from "./Component/Projects/Projects.jsx";
-import { BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import Sidebar from "./Component/Sidebar/Sidebar";
+
+import Home from './Component/Home/Home';
+import About from "./Component/About/About";
+import Skills from "./Component/Skills/Skills";
+import Project from "./Component/Projects/Project";
+import Contact from './Component/Contact/Contact';
 
 const App = () => {
   return (
+    <div className="app">
     <Router>
-      <Navbar />
-      <Hero/>
-      <About/>
-      <Projects/>
-      <Skills/>
+    <Sidebar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/project" element={<Project/>}/>
+          <Route path="/skill" element={<Skills/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+        </Routes>
     </Router>
+    </div>
   );
 };
 

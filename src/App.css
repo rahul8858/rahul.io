@@ -3,81 +3,14 @@
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
-    font-weight: 600;
+}
+.app{
+    display: flex;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 600px) {
-    div.nav{
-        height: 10vh;
-    }
-    div.nav > span{
-        font-size: 56px;
-        margin-left: 5vw;
-    }
-
-    div.nav >ul{
-        margin-right: 5vw;
-    }
-
-    span.li{
-        margin: 0 5px;
-        font-size: 24px;
-    }
-
-    div.Hero{
-        height: 32vh;
-        justify-content: center;
-    }
-
-    div.Hero>div.text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-    }
-    
-    div.Hero>div.text>a{
-        height: 5vh;
-        width: 40vw;
-    }
-
-    div.Hero > div.green{
+    div.green{
         display: none;
-    }
-    div#about{
-        display: flex;
-        flex-direction: column;
-        height: 48vh;
-        padding: 0;
-        margin: 0;
-    }
-
-    div.About > div.aboutme{
-        flex-direction: column;
-        width: 80vw;
-    }
-    
-    div.para{
-        font-size: 24px;
-        width: 80vw;
-    }
-
-    div#Skills{
-        display: flex;
-        flex-direction: column;
-        height: 75vh;
-        margin-top: 8vh;
-    }
-
-    div.skill-container{
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: center;
-        align-items: center;
-        height: 60vh;
-        margin-top: 0;
-    }
-    div.skill-container>img{
-        margin: 2vh 4vw ;
     }
 }
